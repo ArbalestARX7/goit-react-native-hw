@@ -6,16 +6,17 @@ import AddSVG from "../Images/add.svg";
 
 const RegistrationScreen = () => (
   <>
-    <BackGroundIMG />
-    <View style={styles.container}>
-      <View style={styles.registerBg}>
-        <View style={styles.photoPlace}>
-          <AddSVG width={25} height={25} style={styles.addSVG} />
+    <BackGroundIMG>
+      <View style={styles.container}>
+        <View style={styles.registerBg}>
+          <View style={styles.photoPlace}>
+            <AddSVG width={25} height={25} style={styles.addSVG} />
+          </View>
+          <Text style={styles.title}>Реєстрація</Text>
+          <RegisterForm />
         </View>
-        <Text style={styles.title}>Реєстрація</Text>
-        <RegisterForm />
       </View>
-    </View>
+    </BackGroundIMG>
   </>
 );
 

@@ -1,6 +1,6 @@
 import { ImageBackground, Dimensions } from "react-native";
 
-const BackGroundIMG = () => {
+const BackGroundIMG = ({ children }) => {
   return (
     <ImageBackground
       resizeMode="cover"
@@ -12,7 +12,9 @@ const BackGroundIMG = () => {
         width: Dimensions.get("window").width,
         height: Dimensions.get("window").height,
       }}
-    ></ImageBackground>
+    >
+      {children}
+    </ImageBackground>
   );
 };
 

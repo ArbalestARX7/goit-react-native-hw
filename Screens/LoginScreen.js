@@ -5,13 +5,14 @@ import LoginForm from "../components/LoginForm";
 const LoginScreen = () => {
   return (
     <>
-      <BackGroundIMG />
-      <View style={styles.container}>
-        <View style={styles.registerBg}>
-          <Text style={styles.title}>Увійти</Text>
-          <LoginForm />
+      <BackGroundIMG>
+        <View style={styles.container}>
+          <View style={styles.registerBg}>
+            <Text style={styles.title}>Увійти</Text>
+            <LoginForm />
+          </View>
         </View>
-      </View>
+      </BackGroundIMG>
     </>
   );
 };
